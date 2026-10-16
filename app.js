@@ -27,7 +27,7 @@
     list.innerHTML = visible.map((paper) => {
       const yearHeading = previousYear !== paper.year ? `<div class="publication-year"><h3>${paper.year}</h3><span aria-hidden="true"></span></div>` : "";
       previousYear = paper.year;
-      const authors = paper.authors.map((name) => name === "Zihan Chen" ? `<strong>${escapeHtml(name)}</strong>` : escapeHtml(name)).join(", ");
+      const authors = paper.authors.map((name) => `${name === "Zihan Chen" ? `<strong>${escapeHtml(name)}</strong>` : escapeHtml(name)}${name === paper.correspondingAuthor ? '<span class="corresponding-author" lang="zh-CN">（通讯作者）</span>' : ""}`).join(", ");
       const details = [paper.volume ? `vol. ${paper.volume}${paper.number ? `, no. ${paper.number}` : ""}` : "", paper.pages ? (paper.pages.includes("--") ? `pp. ${paper.pages.replace(/--/g, "–")}` : `Art. ${paper.pages}`) : "", paper.year].filter(Boolean).join(", ");
       const url = paper.doi ? `https://doi.org/${paper.doi}` : paper.url;
       const sourceLabel = paper.url.includes("researchgate.net") ? "ResearchGate" : "期刊页面";
