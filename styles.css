@@ -10,3 +10,31 @@
 .hero-identity{display:flex;align-items:center;justify-content:space-between;gap:clamp(14px,2vw,26px);margin-top:26px;max-width:470px}.hero-identity h1{margin-top:0}.hero-portrait{display:block;flex:none;width:clamp(80px,10vw,136px);height:auto;mask-image:linear-gradient(to bottom,#000 86%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 86%,transparent 100%)}@media(max-width:600px){.hero-identity{margin-top:25px;gap:20px;max-width:420px}.hero-identity h1{font-size:60px}.hero-portrait{width:112px}}@media(max-width:360px){.hero-identity{gap:14px}.hero-identity h1{font-size:54px}.hero-portrait{width:84px}}@media print{.hero-identity{max-width:420px;margin-top:12px}.hero-identity h1{font-size:36px}.hero-portrait{width:90px}}
 
 .corresponding-author{font-family:var(--sans);font-size:.92em;color:var(--green);white-space:nowrap}.hero-art .network-art{width:calc(100% + 20px);height:auto;max-height:none;margin:12px -10px 8px}
+.research-interactive .art-index{display:inline;font-family:var(--sans);font-size:10px;letter-spacing:1px}
+.scene-tabs{display:flex;gap:5px;padding:5px;margin-top:22px;border:1px solid #829b7140;border-radius:6px;background:#10382f}
+.scene-tabs [role="tab"]{flex:1;min-height:37px;padding:8px 12px;border:0;border-radius:4px;background:transparent;color:#abc1aa;font-size:12px;line-height:1.6;transition:background .2s,color .2s}
+.scene-tabs [role="tab"][aria-selected="true"]{background:#c7db98;color:#183c2e;font-weight:600;box-shadow:0 2px 8px #0b2b2220}
+.scene-tabs [role="tab"]:hover:not([aria-selected="true"]){background:#254c3e;color:#e2eacf}
+.research-interactive button:focus-visible,.research-interactive select:focus-visible,.research-interactive input:focus-visible{outline-color:#d2dfb0;outline-offset:3px}
+.research-interactive .interactive-art{display:block;width:calc(100% + 20px);height:auto;margin:12px -10px 0;overflow:hidden}
+.scene-panel{min-width:0}
+.scene-options{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:3px}
+.scene-button{display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:34px;padding:6px 11px;border:1px solid #95ae8055;border-radius:4px;background:#234c3e;color:#d7e2c5;font-size:11px;line-height:1.6;transition:background .2s,border-color .2s}
+.scene-button:hover{background:#315d48;border-color:#a8be8e}
+.scene-button[aria-pressed="true"],.scene-play{border-color:#a9c08488;color:#dfe9c3;background:#345841}
+.scene-button>span{font-size:13px}
+.scene-state{font-size:10px;letter-spacing:.5px;color:#a9c18d}
+.scene-description{min-height:38px;margin-top:10px;color:#a0b99e;font-size:10px;line-height:1.9;letter-spacing:.2px}
+.scene-controls{display:flex;align-items:center;gap:8px;border-top:1px solid #809d6a33;padding-top:15px;margin-top:12px}
+.scene-speed{margin-left:auto;display:flex;align-items:center;gap:8px;color:#a4bd9b;font-size:10px;white-space:nowrap}
+.scene-speed select{height:33px;padding:4px 7px;border-color:#91a97855;background:#204637;color:#d9e4c5;font-size:10px;min-width:60px}
+.scene-speed option{background:#173f36;color:#edf0dc}
+.formation-options{display:flex;gap:6px}
+.scene-link-toggle{display:inline-flex;align-items:center;gap:5px;font-size:10px;color:#a8bd9d;white-space:nowrap;cursor:pointer}
+.scene-link-toggle input{margin:0;width:13px;height:13px;accent-color:#c7db98}
+.research-interactive .art-footer{margin-top:17px;padding-top:14px}
+@media(max-width:1050px) and (min-width:601px){.scene-tabs [role="tab"]{font-size:10px;padding-inline:6px}.scene-options{gap:8px}.scene-button{font-size:10px;padding:6px 8px}.scene-state,.scene-link-toggle{font-size:9px}.scene-controls{gap:6px;flex-wrap:wrap}.scene-speed{gap:5px}.scene-speed>span{display:none}.scene-description{font-size:9px;min-height:51px}.research-interactive .art-index{display:none}}
+@media(max-width:600px){.scene-tabs{margin-top:19px}.scene-tabs [role="tab"]{font-size:12px}.scene-description{font-size:10px;min-height:38px}.scene-controls{gap:7px}.scene-speed{gap:6px}.research-interactive .art-index{font-size:9px}}
+@media(max-width:360px){.scene-options{gap:8px}.scene-button{font-size:10px;padding-inline:8px}.scene-state,.scene-link-toggle{font-size:9px}.scene-speed>span{display:none}.scene-controls{gap:6px}.scene-speed select{min-width:54px}.scene-tabs [role="tab"]{font-size:11px}.research-interactive .art-index{display:none}}
+
+.scene-description{min-height:0}.scene-controls{margin-top:10px;padding-top:12px}.research-interactive .art-footer{margin-top:13px;padding-top:12px}
