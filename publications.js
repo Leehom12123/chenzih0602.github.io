@@ -6,7 +6,7 @@ window.PUBLICATIONS = [
     title: "Switching Learning for Multi-Player Optimal H∞ Cooperative Output Regulation in Stochastic Singularly Perturbed Multi-Agent Systems",
     bibTitle: "Switching Learning for Multi-Player Optimal {$H_{\\infty}$} Cooperative Output Regulation in Stochastic Singularly Perturbed Multi-Agent Systems",
     authors: ["Zihan Chen", "Dongdong Li", "Jiuxiang Dong"],
-    journal: "Journal of the Franklin Institute", volume: "", number: "", pages: "", doi: "",
+    journal: "Journal of the Franklin Institute", volume: "", number: "", pages: "", doi: "10.1016/j.jfranklin.2026.109162",
     url: "https://www.researchgate.net/publication/415848007_Switching_Learning_for_Multi-Player_Optimal_H_Cooperative_Output_Regulation_in_Stochastic_Singularly_Perturbed_Multi-Agent_Systems",
     tags: ["multiagent", "learning"], keywords: ["多智能体输出调节", "切换学习"],
     summary: "针对随机奇异摄动多智能体系统，研究多参与者最优输出调节，并结合价值迭代与策略迭代设计切换学习方法"
